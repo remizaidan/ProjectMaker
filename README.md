@@ -1,7 +1,7 @@
 README
 ======
 
-This repository contains three scripts to manage small C++ projects that are meant to work mostly standalone
+This repository contains scripts to manage small C++ projects that are meant to work mostly standalone
 with minimal external dependence.
 
 You can read the story behind this project and find more docmentation here: <br>

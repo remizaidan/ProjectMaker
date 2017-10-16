@@ -1,3 +1,4 @@
 # README
 
-A link to @ref other
+A link to <a href="other.html"> other </a>
+

@@ -196,7 +196,7 @@ echo_verbose ""
 ##
 echo_verbose "Create makefile"
 
-cp template.make $projectPath/makefile
+cp $(dirname $(which $0))/template.make $projectPath/makefile
 check_error "Failed to create the makefile."
 
 sed -i "s|@PROJECT_NAME@|$projectName|g" $projectPath/makefile

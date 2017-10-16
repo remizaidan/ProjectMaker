@@ -9,7 +9,8 @@ You can read the story behind this project and find more docmentation here: <br>
 https://remizaidan.github.io/ProjectMaker/
 </a>
 
-Below is a brief description and the usage of each file in this repository.
+All the files in this repository can safely be installed under PATH.
+Below is a brief description and the usage of each file.
 
 <br>
 
@@ -94,3 +95,5 @@ template.make
 -------------
 
 As its name suggests, it's a template makefile used by `createProject.sh` to generate makefiles for the created projects.
+There is one restriction concerning this file is that it needs to be installed in the same location as `createProject.sh`.
+

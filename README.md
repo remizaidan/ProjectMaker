@@ -25,12 +25,12 @@ Options are:
   -h             Prints this help message and exits.
   -q             Suppress info outputs.
   -f             Force: overwrite existing parent directory. 
-  -t TITLE     A title for this project.
-                        This is used for doxygen documentation and the README file.
-  -m MESSAGE   A brief description of this project.
-                        This is used for doxygen documentation and the README file.
-  -n NAME      A name for the project if different from the project's parent directory.
-                        This will determine the name of the library files if any is to be created.
+  -t TITLE       A title for this project.
+                 This is used for doxygen documentation and the README file.
+  -m MESSAGE     A brief description of this project.
+                 This is used for doxygen documentation and the README file.
+  -n NAME        A name for the project if different from the project's parent directory.
+                 This will determine the name of the library files if any is to be created.
   -r             Link to ROOT libraries
 
 Mandatory arguments are:
@@ -53,9 +53,9 @@ Usage: createGHDocPages.sh [options] <ProjectPath>
 Options are:
   -h             Prints this help message and exits.
   -q             Suppress info outputs.
-  -o DIR       Path where to store the documentation files.
-                        DIR can be absolute or relative to ProjectPath.
-                        Default is docs/gh-pages
+  -o DIR         Path where to store the documentation files.
+                 DIR can be absolute or relative to ProjectPath.
+                 Default is docs/gh-pages
 
 Mandatory arguments are:
   ProjectPath    Path to the project to be documented.
@@ -76,12 +76,12 @@ Usage: publishGHDocPages.sh [options] <ProjectPath>
 Options are:
   -h             Prints this help message and exits.
   -q             Suppress info outputs.
-  -i DIR       Path where to fetch the documentation files.
-                        DIR can be absolute or relative to ProjectPath.
-                        Default is docs/doxygen/html
-  -o DIR       Path where to publish the documentation files.
-                        DIR can be absolute or relative to ProjectPath.
-                        Default is docs/gh-pages
+  -i DIR         Path where to fetch the documentation files.
+                 DIR can be absolute or relative to ProjectPath.
+                 Default is docs/doxygen/html
+  -o DIR         Path where to publish the documentation files.
+                 DIR can be absolute or relative to ProjectPath.
+                 Default is docs/gh-pages
 
 Mandatory arguments are:
   ProjectPath    Path to the project to be documented.

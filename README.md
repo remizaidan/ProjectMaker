@@ -9,7 +9,7 @@ You can read the story behind this project and find more docmentation here: <br>
 https://remizaidan.github.io/ProjectMaker/
 </a>
 
-Below is a brief description and the usage of each script.
+Below is a brief description and the usage of each file in this repository.
 
 <br>
 
@@ -89,3 +89,8 @@ Mandatory arguments are:
 
 <br>
 
+
+template.make
+-------------
+
+As its name suggests, it's a template makefile used by `createProject.sh` to generate makefiles for the created projects.

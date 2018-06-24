@@ -235,7 +235,11 @@ echo "${tab}{"                                 >> $sourceFile
 echo ""                                        >> $sourceFile  
 echo "${tab}}"                                 >> $sourceFile 
 echo ""                                        >> $sourceFile 
-echo ""                                        >> $sourceFile 
+echo ""                                        >> $sourceFile
+echo "${tab}/**"                               >> $sourceFile
+echo "${tab} * @brief Destructor"              >> $sourceFile
+echo "${tab} *"                                >> $sourceFile 
+echo "${tab} */"                               >> $sourceFile  
 echo "${tab}${className}::~${className}()"     >> $sourceFile
 echo "${tab}{"                                 >> $sourceFile 
 echo ""                                        >> $sourceFile  

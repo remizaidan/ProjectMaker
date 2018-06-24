@@ -77,7 +77,7 @@ projectTitle=""
 projectBrief=""
 useROOT="NO"
 
-while getopts "h?qfm:n:r" opt; do
+while getopts "h?qfm:n:t:r" opt; do
     case "$opt" in
     h|\?)
         show_help

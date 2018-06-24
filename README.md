@@ -41,6 +41,32 @@ Mandatory arguments are:
 <br>
 
 
+createCppClass.sh
+----------------
+
+This script creates the skeleton for an empty class in an existing project.
+
+```
+Usage: ./createCppClass.sh [options] <ClassName>
+
+Options are:
+  -h             Prints this help message and exits.
+  -q             Suppress info outputs.
+  -f             Force: overwrite existing files.
+  -m MESSAGE     A brief description of this class.
+                 This is used for doxygen documentation.
+  -p PROJECT     A path to the parent project. Default is '.'
+  -n NAMESPACE   Namespace for this class. Nested namespaces can be seperated by ::
+  -a AUTHOR      Author information. Example: 'First Last <example@email.com>'
+                 This is used for doxygen documentation.
+
+Mandatory arguments are:
+  ClassName      Name of the class to be created.
+```
+
+<br>
+
+
 createGHDocPages.sh
 -------------------
 

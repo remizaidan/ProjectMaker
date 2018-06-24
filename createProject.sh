@@ -91,6 +91,8 @@ while getopts "h?qfm:n:r" opt; do
 	;;
     n)  projectName=$OPTARG
 	;;
+    t)  projectTitle=$OPTARG
+	;;
     r)  useROOT="YES"
 	;;
     esac

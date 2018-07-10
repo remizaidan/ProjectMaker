@@ -8,6 +8,10 @@ EXT_INCLUDE =
 EXT_LDFLAGS = 
 EXT_CXXFLAGS = 
 
+#### Specify here external projects having similar structure to this one
+
+EXT_PROJECTS =
+
 # code structure
 OBJDIR = .objs
 DEPDIR = .deps
@@ -25,6 +29,10 @@ CXX           = g++
 CXXFLAGS      = -O2 -Wall -fPIC -g -ansi -std=c++0x 
 LDFLAGS       = -O -L. 
 INCLUDE       = -I. -I$(INCLUDEDIR)
+
+EXT_LDFLAGS += $(foreach proj,$(EXT_PROJECTS),-L$(proj)/$(LIBDIR) -l$(shell basename $(proj)))
+EXT_CXXFLAGS += $(foreach proj,$(EXT_PROJECTS),-I$(proj)/$(INCLUDEDIR))
+$(foreach proj,$(EXT_PROJECTS),$(shell mkdir -p $(LIBDIR) && ln -sf $(proj)/$(LIBDIR)/* $(LIBDIR)))
 
 INCLUDE += $(EXT_INCLUDE)
 LDFLAGS += $(EXT_LDFLAGS)
